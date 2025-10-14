@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title th:text="'Error ' + ${status}">Error</title>
+	<link rel="stylesheet" href="css/error.css" />
+</head>
+<body>
+	<div class="container">
+		<h1 th:text="'Error ' + ${status}">Error 500</h1>
+		<p th:text="${error} ?: 'Ha ocurrido un error inesperado.'">Ha ocurrido un error inesperado.</p>
+		<div class="details">
+			<p><strong>Ruta:</strong> <code th:text="${path} ?: 'desconocida'">/ruta</code></p>
+			<p><strong>Mensaje:</strong> <code th:text="${message} ?: 'No hay más detalles disponibles.'">Sin detalles</code></p>
+		</div>
+		<a href="/">Inicio</a>
+		<button onclick="location.reload()">Reintentar</button>
+	</div>
+</body>
+</html>
