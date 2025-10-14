@@ -1,13 +1,15 @@
 # Lab 2 Web Server -- Project Report
 
 ## Description of Changes
-[Detailed description of all changes made]
+Se ha añadido un nuevo componente, TimeComponent además de sus respectivos test para comprobar su correcto funcionamiento.
+Se ha añadido una página de error customizada, cuyo objetivo es informar del error ocurrido.
+Se ha habilitado HTTP/2 y se ha configurtado SSL, usando un certificado auto-firmado mediante el uso de OpenSSL para Windows.
 
 ## Technical Decisions
-[Explanation of technical choices made]
+Seguir las instrucciones del guión
 
 ## Learning Outcomes
-[What you learned from this assignment]
+Gracias a esta tarea he aprendido a habilitar el uso de HTTP/2 y a como hacer uso de un certificado auto-firmado.
 
 ## AI Disclosure
 ### AI Tools Used
